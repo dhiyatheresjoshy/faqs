@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ's</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+        </div>
+    </nav>
+    <header>Frequently Asked Questions</header>
+    <main>
+        <div class="categories">
+            <div class="container">
+                <div class="category" onclick="viewcontent('qa1')">
+                    <img src="Vector 11.png" alt="bullet-point">
+                    <p>General</p>
+                </div>
+                <ul id="qa1">
+                    <li><p><strong>What is this website about?</strong><br/>This website is designed to help users learn web development through tutorials, projects, and community support.</p></li>
+                    <li><p><strong>Who can use this website?</strong><br/>Anyone interested in learning HTML, CSS, JavaScript, and frontend development can use this website.</p></li>
+                    <li><p><strong>Is the content free?</strong><br/>Yes, most of the tutorials and resources are completely free to access.</p></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="category" onclick="viewcontent('qa2')">
+                    <img src="Vector 11.png" alt="bullet-point">
+                    <p>Account & Login</p>
+                </div>
+                <ul id="qa2">
+                    <li><p><strong>Do I need to create an account to access content?</strong><br/>No, you can browse the tutorials without signing up. However, creating an account gives access to progress tracking and quizzes.</p></li>
+                    <li><p><strong>I forgot my password. What should I do? </strong><br/>Click on "Forgot Password" on the login page, and you’ll receive a password reset link via email.</p></li>
+                    <li><p><strong>Can I delete my account? </strong><br/>Yes, go to your profile settings and click “Delete Account.” Please note this action is irreversible.</p></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="category" onclick="viewcontent('qa3')">
+                    <img src="Vector 11.png" alt="bullet-point">
+                    <p>Learning & Courses</p>
+                </div>
+                <ul id="qa3">
+                    <li><p><strong>What technologies do you cover?</strong><br/>We cover HTML, CSS, JavaScript, React, Git, and basic design principles.</p></li>
+                    <li><p><strong>Are there projects I can build?</strong><br/>Each course includes hands-on projects like to-do apps, responsive websites, and portfolio pages.</p></li>
+                    <li><p><strong>How long does it take to finish a course?</strong><br/>It depends on your pace, but most courses can be completed in 2–4 weeks with regular practice.</p></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="category" onclick="viewcontent('qa4')">
+                    <img src="Vector 11.png" alt="bullet-point">
+                    <p>Support & Contact</p>
+                </div>
+                <ul id="qa4">
+                    <li><p><strong>How can I get help if I'm stuck?</strong><br/>You can post your questions in our discussion forum or join our Discord community for live help.</p></li>
+                    <li><p><strong>Is there a way to contact support directly?</strong><br/>Yes, use the “Contact Us” form or email support@example.com for assistance.</p></li>
+                    <li><p><strong>Do you have a feedback system?</strong><br/>Absolutely! Each tutorial has a feedback form so you can rate and suggest improvements.</p></li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="category">
+                    <img src="Vector 11.png" alt="bullet-point">
+                    <p>Other</p>
+                </div>
+                <ul id="qa5">
+                    <li><p><strong>How can I get help if I'm stuck?</strong><br/>You can post your questions in our discussion forum or join our Discord community for live help.</p></li>
+                    <li><p><strong>Is there a way to contact support directly?</strong><br/>Yes, use the “Contact Us” form or email support@example.com for assistance.</p></li>
+                    <li><p><strong>Do you have a feedback system?</strong><br/>Absolutely! Each tutorial has a feedback form so you can rate and suggest improvements.</p></li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <script>
+    function viewcontent(qa){
+        const ids=['qa1', 'qa2', 'qa3', 'qa4', 'qa5'];
+        for (let id of ids){
+            if (id===qa){
+                document.getElementById(id).style.display="block";
+            }
+            else{
+                document.getElementById(id).style.display="none";
+            }
+        } 
+       
+        
+    }
+    </script>
+</body>
+</html>
